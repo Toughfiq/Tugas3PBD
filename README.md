@@ -1,6 +1,7 @@
 # Sistem Manajemen Restoran - Tugas Praktik 3 PBO
 
 ## 📋 Deskripsi Project
+
 Program Java untuk manajemen restoran yang mengimplementasikan konsep-konsep Pemrograman Berbasis Objek (OOP) seperti abstraksi, inheritance, encapsulation, polymorphism, exception handling, dan operasi file.
 
 ## 🗂️ Struktur Folder
@@ -38,30 +39,34 @@ ManajemenRestoran/
 ## 🎯 Fitur Program
 
 1. **Manajemen Menu**
-    - Tambah item menu (Makanan, Minuman, Diskon)
-    - Tampilkan semua menu
-    - Simpan menu ke file
-    - Muat menu dari file
+
+   - Tambah item menu (Makanan, Minuman, Diskon)
+   - Tampilkan semua menu
+   - Simpan menu ke file
+   - Muat menu dari file
 
 2. **Manajemen Pesanan**
-    - Buat pesanan baru
-    - Tambah item ke pesanan
-    - Hitung total dengan diskon
-    - Tampilkan struk pembayaran
-    - Simpan struk ke file
+
+   - Buat pesanan baru
+   - Tambah item ke pesanan
+   - Hitung total dengan diskon
+   - Tampilkan struk pembayaran
+   - Simpan struk ke file
 
 3. **Operasi File**
-    - Simpan/muat data menu
-    - Simpan struk pesanan
-    - Lihat struk yang tersimpan
+   - Simpan/muat data menu
+   - Simpan struk pesanan
+   - Lihat struk yang tersimpan
 
 ## 🔧 Konsep OOP yang Diimplementasikan
 
 ### 1. **Abstraksi**
+
 - **MenuItem** sebagai abstract class
 - Method abstrak: `tampilMenu()` dan `toFileString()`
 
 ### 2. **Inheritance**
+
 ```
 MenuItem (Abstract)
 ├── Makanan
@@ -70,62 +75,49 @@ MenuItem (Abstract)
 ```
 
 ### 3. **Encapsulation**
+
 - Semua atribut class bersifat `private`
 - Akses melalui getter dan setter methods
 - Information hiding
 
 ### 4. **Polymorphism**
+
 - Override method `tampilMenu()` di setiap subclass
 - Override method `toString()` dan `toFileString()`
 - Runtime polymorphism dengan instanceof
 
 ### 5. **Exception Handling**
+
 - Custom exception: `MenuException`
 - Try-catch untuk input validation
 - IOException handling untuk file operations
 
 ### 6. **I/O & File Operations**
+
 - `BufferedReader` dan `BufferedWriter` untuk menu
 - `PrintWriter` untuk struk
 - File parsing dan formatting
 
 ### 7. **Input Validation**
+
 - `InputValidator` utility class
 - Validasi integer, double, string, percentage
 - Validasi Yes/No confirmation
 - Error handling untuk input tidak valid
 
 ### 8. **Collections**
+
 - `ArrayList<MenuItem>` untuk daftar menu
 - `ArrayList<Integer>` untuk jumlah item pesanan
 
 ### 8. **Struktur Kontrol**
+
 - **Keputusan**: if-else, switch-case
 - **Pengulangan**: for, while, for-each
 - **Array & String**: String manipulation, array operations
 
-## 💻 Cara Compile dan Menjalankan
-
-### Compile
-```bash
-# Dari root folder project
-javac -d bin src/**/*.java src/*.java
-```
-
-### Run
-```bash
-# Dari root folder project
-java -cp bin Main
-```
-
-### Atau gunakan IDE (Eclipse, IntelliJ IDEA, NetBeans)
-1. Import project ke IDE
-2. Set structure folder src sebagai source folder
-3. Run Main.java
-
-## 📝 Cara Penggunaan
-
 ### 1. Menu Utama
+
 ```
 ╔════════════════════════════════════════════════════════╗
 ║                    MENU UTAMA                          ║
@@ -141,11 +133,13 @@ java -cp bin Main
 ```
 
 ### 2. Tambah Item Menu
+
 - Pilih jenis: Makanan, Minuman, atau Diskon
 - Input nama, harga, dan detail
 - Item otomatis tersimpan dalam sistem
 
 ### 3. Buat Pesanan
+
 - Input nama pelanggan
 - Pilih item dari menu yang tersedia
 - Input jumlah untuk setiap item
@@ -153,13 +147,15 @@ java -cp bin Main
 - Struk dapat disimpan ke file
 
 ### 4. Lihat Struk
+
 - Pilih dari daftar struk tersimpan
 - Tampilkan detail pesanan
 - Format: `ORD-YYYYMMDDHHmmss.txt`
 
-## 📊 Format File
+## Format File
 
 ### menu.txt
+
 ```
 MAKANAN|Nasi Goreng|25000|Utama
 MINUMAN|Es Teh|8000|Dingin
@@ -167,6 +163,7 @@ DISKON|Paket Hemat|50000|20
 ```
 
 ### Struk (ORD-xxxxx.txt)
+
 ```
 ════════════════════════════════════════════════════════
                   STRUK PEMBAYARAN
@@ -178,72 +175,20 @@ Tanggal      : 01/01/2025 12:00:00
 ...
 ```
 
-## Penjelasan Video (Poin-Poin Penting)
-
-### 1. Pengenalan Project (2 menit)
-- Overview sistem manajemen restoran
-- Fitur-fitur utama
-- Struktur folder dan package
-
-### 2. Konsep Abstraksi & Inheritance (3 menit)
-- Jelaskan MenuItem sebagai abstract class
-- Hubungan inheritance: Makanan, Minuman, Diskon
-- Demonstrasi method abstrak
-
-### 3. Encapsulation & Polymorphism (3 menit)
-- Private attributes dan getter/setter
-- Override method tampilMenu() di setiap class
-- Runtime polymorphism
-
-### 4. Exception Handling & I/O (3 menit)
-- Custom MenuException
-- Try-catch blocks
-- File operations (simpan/muat)
-
-### 5. Demo Program (4 menit)
-- Tambah menu
-- Buat pesanan
-- Simpan dan lihat struk
-- Show file yang dihasilkan
-
-### 6. Penutup (< 1 menit)
-- Kesimpulan konsep OOP yang dipakai
-- Q&A tips
-
-**Total: Maksimal 15 menit**
-
 ## Catatan Penting
 
 1. **File Initialization**
-    - Program otomatis membuat folder `data/` dan `data/struk/`
-    - Menu default akan ditambahkan jika file kosong
+
+   - Program otomatis membuat folder `data/` dan `data/struk/`
+   - Menu default akan ditambahkan jika file kosong
 
 2. **Error Handling**
-    - Input validation untuk angka
-    - Exception handling untuk item tidak ditemukan
-    - IOException handling untuk operasi file
+
+   - Input validation untuk angka
+   - Exception handling untuk item tidak ditemukan
+   - IOException handling untuk operasi file
 
 3. **Data Persistence**
-    - Menu disimpan otomatis ke file
-    - Struk dapat disimpan sesuai kebutuhan
-    - Format file plain text untuk mudah di-debug
-
-## Pengembangan Lanjutan (Opsional)
-
-- [ ] Database integration (MySQL/PostgreSQL)
-- [ ] GUI dengan JavaFX atau Swing
-- [ ] Multi-user authentication
-- [ ] Payment gateway integration
-- [ ] Print struk langsung ke printer
-- [ ] Laporan penjualan
-- [ ] Inventory management
-
-## Referensi
-
-- Java OOP Concepts
-- Java File I/O
-- Java Exception Handling
-- Java Collections Framework
-
-
-© 2025 Sistem Manajemen Restoran - Tugas PBO
+   - Menu disimpan otomatis ke file
+   - Struk dapat disimpan sesuai kebutuhan
+   - Format file plain text untuk mudah di-debug
