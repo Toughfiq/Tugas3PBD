@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Data/Data.iml" filepath="$PROJECT_DIR$/Data/Data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tugas3pbd.iml" filepath="$PROJECT_DIR$/Tugas3pbd.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Data/struk/struk.iml" filepath="$PROJECT_DIR$/Data/struk/struk.iml" />
+    </modules>
+  </component>
+</project>

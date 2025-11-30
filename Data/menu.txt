@@ -1,0 +1,10 @@
+MAKANAN|Nasi Goreng Spesial|25000.0|Utama
+MAKANAN|Sate Ayam|30000.0|Utama
+MAKANAN|Gado-Gado|20000.0|Pembuka
+MAKANAN|Es Krim Vanilla|15000.0|Penutup
+MINUMAN|Es Teh Manis|8000.0|Dingin
+MINUMAN|Jus Jeruk|12000.0|Dingin
+MINUMAN|Kopi Susu|15000.0|Panas
+MINUMAN|Cappuccino|18000.0|Panas
+DISKON|Paket Hemat 1|50000.0|20.0
+DISKON|Paket Hemat 2|75000.0|15.0

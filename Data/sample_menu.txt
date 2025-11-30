@@ -1,0 +1,18 @@
+MAKANAN|Nasi Goreng Spesial|25000|Utama
+MAKANAN|Sate Ayam|30000|Utama
+MAKANAN|Gado-Gado|20000|Pembuka
+MAKANAN|Es Krim Vanilla|15000|Penutup
+MAKANAN|Soto Ayam|22000|Utama
+MAKANAN|Mie Goreng|20000|Utama
+MAKANAN|Lumpia Basah|18000|Pembuka
+MAKANAN|Pisang Goreng|12000|Penutup
+MINUMAN|Es Teh Manis|8000|Dingin
+MINUMAN|Jus Jeruk|12000|Dingin
+MINUMAN|Kopi Susu|15000|Panas
+MINUMAN|Cappuccino|18000|Panas
+MINUMAN|Es Kelapa Muda|15000|Dingin
+MINUMAN|Teh Tarik|10000|Panas
+MINUMAN|Lemon Tea|9000|Dingin
+DISKON|Paket Hemat 1|50000|20
+DISKON|Paket Hemat 2|75000|15
+DISKON|Paket Keluarga|100000|25
